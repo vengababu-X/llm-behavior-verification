@@ -1,5 +1,6 @@
-from scipy.stats import ks_2samp
+def detect_drift(baseline, current, threshold=0.1):
+    mean_base = sum(baseline) / len(baseline)
+    mean_curr = sum(current) / len(current)
 
-def detect_drift(baseline_scores, current_scores, alpha):
-    stat, p_value = ks_2samp(baseline_scores, current_scores)
-    return p_value < alpha, p_value
+    diff = abs(mean_base - mean_curr)
+    return diff > threshold, diff
