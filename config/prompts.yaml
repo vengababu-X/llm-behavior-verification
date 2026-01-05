@@ -1,2 +1,42 @@
-- id: api_testing
-  prompt: "Explain API testing in simple terms"
+- - id: api_testing_full_validation
+  description: >
+    Validate that the LLM can produce a structured, complete,
+    and testable explanation of API testing.
+  prompt: |
+    You are being evaluated by an automated testing framework.
+
+    Respond in the EXACT structure below.
+    Do not skip sections.
+    Use clear headings.
+
+    === SECTION 1: DEFINITION ===
+    Explain what API testing is in 2–3 sentences.
+
+    === SECTION 2: OBJECTIVES ===
+    List at least 4 objectives of API testing as bullet points.
+
+    === SECTION 3: TEST TYPES ===
+    List and briefly explain:
+    - Positive testing
+    - Negative testing
+    - Boundary testing
+    - Regression testing
+
+    === SECTION 4: VALIDATION CHECKS ===
+    Describe how the following are validated in API testing:
+    - HTTP status codes
+    - Response schema
+    - Data correctness
+    - Error handling
+
+    === SECTION 5: AUTOMATION ===
+    Explain how API testing is automated using tools or frameworks.
+
+    === SECTION 6: CONCLUSION ===
+    Summarize why API testing is critical in backend systems.
+
+    Important rules:
+    - Use clear headings exactly as given
+    - Do not merge sections
+    - Do not add extra sections
+    - Keep the response professional and technical
