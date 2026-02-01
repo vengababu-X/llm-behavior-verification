@@ -141,12 +141,12 @@ python -m experiments.baseline_run
 
 ⚠️ Subject to rate limits
 
-
+```
 ---
 
 📂 Project Structure
 
-.
+```
 ├── config/              # Structured prompts
 ├── core/                # LLM client & sampler
 ├── experiments/         # Baseline & regression runs
@@ -155,7 +155,7 @@ python -m experiments.baseline_run
 ├── baseline_outputs.txt # Stored baseline behavior
 └── run_verification.py
 
-
+```
 ---
 
 🧠 Design Philosophy
